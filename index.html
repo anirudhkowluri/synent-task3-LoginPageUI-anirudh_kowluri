@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h1>Welcome BacK</h1>
+            <p>Login to your account</p>
+
+            <form id="loginForm">
+
+                <!-- Email -->
+                <div class="input-group">
+                    <label>Email</label>
+
+                    <input 
+                        type="email" 
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <!-- Password -->
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <div class="password-wrapper">
+
+                        <input 
+                            type="password" 
+                            id="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                        <span id="togglePassword">👁️</span>
+
+                    </div>
+
+                </div>
+
+                <!-- Remember Me -->
+                <div class="remember-me">
+
+                    <div>
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+
+                    <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                </div>
+
+                <!-- Login Button -->
+                <button type="submit" class="login-btn">
+                    <span id="btnText">Login</span>
+                </button>
+
+                <!-- Message -->
+                <p id="message"></p>
+
+                <!-- Social Login -->
+                <div class="social-login">
+
+                    <button type="button" class="login-btn">
+                    <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmail.google.com%2Fmail&ec=GAlAFw&hl=en-GB&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1290027483%3A1778690989068318">GOOGLE</a>
+                    </button>
+
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

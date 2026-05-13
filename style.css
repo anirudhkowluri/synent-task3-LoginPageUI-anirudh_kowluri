@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+    linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+    overflow: hidden;
+}
+
+/* Background Glow */
+body::before,
+body::after{
+
+    content: '';
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.1);
+
+    filter: blur(50px);
+
+    z-index: -1;
+}
+
+body::before{
+    top: -100px;
+    left: -100px;
+}
+
+body::after{
+    bottom: -100px;
+    right: -100px;
+}
+
+/* Main Container */
+.login-container{
+
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Login Card */
+.login-box{
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 25px;
+
+    padding: 45px 35px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.25);
+
+    animation: fadeIn 0.6s ease;
+}
+
+/* Heading */
+.login-box h1{
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.login-box p{
+
+    text-align: center;
+
+    color: rgba(255,255,255,0.8);
+
+    margin-bottom: 25px;
+}
+
+/* Input Group */
+.input-group{
+
+    margin-bottom: 20px;
+}
+
+.input-group label{
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+/* Inputs */
+.input-group input{
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    outline: none;
+
+    background: rgba(255,255,255,0.9);
+
+    font-size: 15px;
+
+    transition: 0.3s ease;
+}
+
+.input-group input:focus{
+
+    transform: scale(1.02);
+
+    box-shadow:
+    0 0 15px rgba(255,255,255,0.5);
+}
+
+/* Password Wrapper */
+.password-wrapper{
+
+    position: relative;
+}
+
+#togglePassword{
+
+    position: absolute;
+
+    right: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    user-select: none;
+
+    font-size: 18px;
+}
+
+/* Remember Me */
+.remember-me{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+/* Forgot Password */
+.forgot-password a{
+
+    color: white;
+
+    text-decoration: none;
+}
+
+.forgot-password a:hover{
+
+    color: #ffd166;
+}
+
+/* Login Button */
+.login-btn{
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: white;
+
+    color: #6a11cb;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.login-btn:hover{
+
+    transform: translateY(-3px);
+
+    background: #6a11cb;
+
+    color: white;
+}
+
+/* Message */
+#message{
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-weight: 500;
+
+    color: white;
+}
+
+/* Social Login */
+.social-login{
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.social-login button{
+
+    flex: 1;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.google-btn{
+
+    background: white;
+}
+
+.google-btn:hover{
+
+    transform: scale(1.03);
+}
+
+.github-btn{
+
+    background: black;
+
+    color: white;
+}
+
+.github-btn:hover{
+
+    transform: scale(1.03);
+}
+
+/* Responsive */
+@media(max-width: 500px){
+
+    .login-box{
+
+        padding: 35px 20px;
+    }
+
+    .remember-me{
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
