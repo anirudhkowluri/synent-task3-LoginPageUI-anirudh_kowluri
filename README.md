@@ -1,4 +1,4 @@
-📸 Project Overview
+# 📸 Project Overview
 
 The application provides a modern login interface where users can enter their email and password credentials. The password field includes a toggle feature that allows users to show or hide the password for better usability. A Remember Me checkbox is provided to simulate account session preferences, and a Forgot Password link is included for additional user interface completeness.
 
@@ -49,7 +49,7 @@ login-page/
 └── README.md
 
 
-⚙️ Installation Steps
+# ⚙️ Installation Steps
 Step 1: Clone the Repository
 git clone https://github.com/your-username/login-page.git
 Step 2: Open the Project Folder
@@ -62,7 +62,7 @@ index.html
 
 You can also use the VS Code Live Server extension for a better development experience.
 
-▶️ How to Use the Application
+# ▶️ How to Use the Application
 Enter your email address in the email field.
 Enter your password in the password field.
 Click the 👁️ icon to show or hide your password.
