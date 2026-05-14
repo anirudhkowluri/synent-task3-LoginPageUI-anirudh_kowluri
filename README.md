@@ -70,9 +70,6 @@ Optionally enable the Remember Me checkbox.
 Click the Login button.
 The application validates the entered credentials.
 A loading animation appears before displaying the login success message.
+<img width="1912" height="830" alt="Screenshot 2026-05-14 193707" src="https://github.com/user-attachments/assets/959d2b66-7f87-4f76-b75e-4d1947751733" />
 
-# OUTPUT SCREENSHPTS
-<img width="892" height="810" alt="Screenshot 2026-05-14 195005" src="https://github.com/user-attachments/assets/a48b8996-6c39-47e8-b64c-b27f3d5e195a" />
-<img width="892" height="810" alt="Screenshot 2026-05-14 195005" src="https://github.com/user-attachments/assets/4d866503-735c-48e7-be13-7c8ac24139b3" />
-<img width="892" height="810" alt="Screenshot 2026-05-14 195005" src="https://github.com/user-attachments/assets/241ad927-e8da-46e1-bd28-5f2c53d59aa3" />
 
